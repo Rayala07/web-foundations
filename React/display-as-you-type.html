@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container"></div>
+
+    <script src="https://unpkg.com/supersimpledev/dayjs.js"></script>
+
+    <script src="https://unpkg.com/supersimpledev/react.js"></script>
+    <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
+
+    <script src="https://unpkg.com/supersimpledev/babel.js"></script>
+
+    <script type="text/babel">
+      const container = document.querySelector(".container");
+      const root = ReactDOM.createRoot(container);
+
+      function Typer() {
+        const [text, setText] = React.useState("");
+
+        function displayText(event) {
+          setText(event.target.value);
+        }
+
+        function textReset() {
+          setText("");
+        }
+
+        function inputTextExample() {
+            setText("Alice in Borderland")
+        }
+
+        return (
+          <>
+            <input
+              type="text"
+              placeholder="Type something.."
+              onChange={displayText}
+            />
+            <button onClick={textReset}>Reset</button>
+            <button onClick={inputTextExample}>Example</button>
+            <p>{text}</p>
+          </>
+        );
+      }
+
+      function App() {
+        return <Typer />;
+      }
+
+      root.render(<App />);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,241 @@
+body {
+  font-family: Roboto, sans-serif;
+  background: linear-gradient(180deg, #9095a1ff 0%, #171a1fff 100%);
+  color: white;
+  min-height: 100vh;
+}
+
+p {
+  margin: 0;
+}
+
+.track-expenses-container {
+  background: #1e2128ff;
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+  width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.track-expenses-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: #b7bdc3;
+}
+
+.track-expenses-subtitle {
+  font-size: 14px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  color: #cfd4d9;
+}
+
+.css-expense-input,
+.css-expense-amount-input {
+  background-color: #323743ff;
+  color: #d2d4e0;
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+.css-expense-input::placeholder,
+.css-expense-amount-input::placeholder {
+  color: #91939f;
+}
+
+.css-expense-input:focus,
+.css-expense-amount-input:focus {
+  outline: none;
+}
+
+.css-add-expense-btn {
+  background-color: #579affff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: box-shadow 0.35s ease, transform 0.35s ease;
+}
+
+.css-add-expense-btn:focus {
+  outline: none;
+}
+
+.css-add-expense-btn:hover {
+  box-shadow: 0px 4px 12px rgba(87, 154, 255, 0.6);
+  transform: translateY(-1px);
+}
+
+.expense-added-message {
+  margin-top: 15px;
+  color: #cfd4d9;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* Your expenses section */
+.css-your-expenses-container {
+  width: 580px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+.css-your-expenses-title {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.sorting-button-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#sort-by-amount-btn,
+#sort-by-name-btn {
+  background-color: #1e2128ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 12px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.35s ease;
+}
+
+.sort-icon {
+  height: 15px;
+  width: 15px;
+}
+
+#sort-by-amount-btn:hover,
+#sort-by-name-btn:hover {
+  transform: translateY(-1px);
+}
+
+.css-expense-list-container {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 18px;
+}
+
+.css-expense-item {
+  border: none;
+  background-color: #1e2128ff;
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.expense-name {
+  color: #d2d4e0;
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+.css-expense-item-container {
+  color: #579affff;
+  font-family: Inter, sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.high-expense-amount {
+  color: rgb(195, 38, 38);
+}
+
+.remove-expense-btn {
+  background-color: #fa666dff;
+  color: #f7f7f7;
+  border: none;
+  border-radius: 5px;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 450;
+  padding: 8px 50px;
+  cursor: pointer;
+  transition: box-shadow 0.35s ease, transform 0.35s ease;
+}
+
+.remove-expense-btn:focus {
+  outline: none;
+}
+
+.remove-expense-btn:hover {
+  box-shadow: 0 4px 12px rgba(250, 102, 109, 0.6);
+  transform: translateY(-1px);
+}
+
+/* Expense overview section */
+.expense-overview-container {
+  width: 580px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+.expense-overview-title {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.expense-overview-summary-container {
+  background-color: #1e2128ff;
+  border-radius: 5px;
+  padding-top: 20px;
+  padding-bottom: 100px;
+  padding-left: 30px;
+}
+
+.expense-overview-summary-title {
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.number-of-expense {
+  color: #d2d4e0;
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.total-expense {
+  color: #579affff;
+  font-family: Inter, sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 50px;
+}
+
+.expense-overview-description {
+  color: #d2d4e0;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+/* Share icon attributes on social while posting - <a href="https://www.flaticon.com/free-icons/sort" title="sort icons">Sort icons created by inkubators - Flaticon</a> */

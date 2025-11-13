@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Functions</title>
+  </head>
+  <body>
+    <button id="add-item-btn" onclick="addItem()">Add</button>
+    <br /><br />
+    <button id="remove-item-btn" onclick="removeItem()">Remove</button>
+    <br /><br />
+    <button id="add-to-cart-btn" onclick="addToCart()">Add To Cart</button>
+    <div class="added-message"></div>
+  </body>
+
+  <script>
+    const addItemEl = document.getElementById("add-item-btn");
+    const removeItemEl = document.getElementById("remove-item-btn");
+    const addToCartEl = document.querySelector("#add-to-cart-btn");
+    const addedMessageEl = document.querySelector(".added-message");
+
+    function addToCart() {
+      const html = `
+        <p>Added to cart</p>
+        `;
+      addedMessageEl.innerHTML = html;
+
+      setTimeout(function () {
+        addedMessageEl.innerHTML = "";
+      }, 2000);
+    }
+
+    function removeItem() {
+      removeItemEl.textContent = "Removing...";
+      setTimeout(function () {
+        removeItemEl.textContent = "Removed !";
+      }, 1000);
+    }
+
+    function addItem() {
+      setTimeout(function () {
+        addItemEl.textContent = "Added !";
+      }, 1000);
+    }
+  </script>
+</html>

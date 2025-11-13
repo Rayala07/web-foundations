@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube-Clone</title>
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="header-section.css" />
+    <link rel="stylesheet" href="video-section.css" />
+    <link rel="stylesheet" href="sidebar.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="left-section">
+        <img class="hamburger-menu" src="icons/hamburger-menu.svg" alt="menu" />
+        <img
+          class="youtube-logo"
+          src="icons/youtube-logo.svg"
+          alt="youtube-logo"
+        />
+      </div>
+      <div class="mid-section">
+        <input type="text" class="search-bar" placeholder="Search" />
+        <button class="search-button">
+          <img
+            class="search-icon"
+            src="icons/search-logo.svg"
+            alt="search-logo"
+          />
+          <div class="tooltip">Search</div>
+        </button>
+        <button class="voice-search-button">
+          <img
+            class="voice-icon"
+            src="icons/voice-search-icon.svg"
+            alt="voice-logo"
+          />
+          <div class="tooltip">Voice Search</div>
+        </button>
+      </div>
+      <div class="right-section">
+        <img
+          class="upload-icon"
+          src="icons/upload-logo.svg"
+          alt="upload-logo"
+        />
+        <img
+          class="apps-logo"
+          src="icons/youtube-apps-logo.svg"
+          alt="apps-logo"
+        />
+        <div class="notifications-icon-container">
+          <img
+            class="notifications-logo"
+            src="icons/notifications-logo.svg"
+            alt="notifications"
+          />
+          <div class="notifications-count">3</div>
+        </div>
+        <img
+          class="current-user-logo"
+          src="channel-profile/my_channel_pic.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <div class="side-bar">
+      <div class="sidebar-link">
+        <img class="home-icon" src="icons/home-icon.svg" alt="" />
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img class="explore-icon" src="icons/explore-icon.svg" alt="" />
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img
+          class="subscription-icon"
+          src="icons/subscriptions-icon.svg"
+          alt=""
+        />
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img class="originals-icon" src="icons/originals-icon.svg" alt="" />
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img
+          class="youtube-music-icon"
+          src="icons/youtube-music-icon.svg"
+          alt=""
+        />
+        <div>Yotube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img class="library-icon" src="icons/library-icon.svg" alt="" />
+        <div>Library</div>
+      </div>
+    </div>
+
+    <div class="video-grid">
+      <div class="video-preview">
+        <div class="thumbnail-container">
+          <img
+            class="thumbnail"
+            src="thumbnails/thumbnail_1.avif"
+            alt="cr7_thumbnail"
+          />
+          <div class="video-time">14:20</div>
+        </div>
+        <div class="video-details">
+          <div class="channel-DP">
+            <img
+              class="profile-picture"
+              src="channel-profile/channels_profile_1.jpg"
+              alt=""
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Cristiano Ronaldo 100 Legendary Goals Impossible To Forget
+            </p>
+            <p class="video-author">kGZ</p>
+            <p class="video-stats">12M views &middot; 10 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-container">
+          <img
+            class="thumbnail"
+            src="thumbnails/thumbnail_2.avif"
+            alt="scout_thumbnail"
+          />
+          <div class="video-time">11:00</div>
+        </div>
+        <div class="video-details">
+          <div class="channel-DP">
+            <img
+              class="profile-picture"
+              src="channel-profile/channels_profile_2.jpg"
+              alt=""
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">One Step Closer, One Dream One Day 🏆</p>
+            <p class="video-author">Scout</p>
+            <p class="video-stats">2.3M views &middot; 4 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-container">
+          <img
+            class="thumbnail"
+            src="thumbnails/thumbnail_3.avif"
+            alt="AV_thumbnail"
+          />
+          <div class="video-time">10:10</div>
+        </div>
+        <div class="video-details">
+          <div class="channel-DP">
+            <img
+              class="profile-picture"
+              src="channel-profile/channels_profile_3.jpg"
+              alt="channel-displayPic"
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              BMW S1000RR M Sport Pro Ready to Get Goosebumps 🔥
+            </p>
+            <p class="video-author">Ayush Verma</p>
+            <p class="video-stats">1M views &middot;3 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-container">
+          <img
+            class="thumbnail"
+            src="thumbnails/thumbnail_4.avif"
+            alt="redbull_thumbnail"
+          />
+          <div class="video-time">15:35</div>
+        </div>
+        <div class="video-details">
+          <div class="channel-DP">
+            <img
+              class="profile-picture"
+              src="channel-profile/channels_profile_4.jpg"
+              alt=""
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              F1 Car vs MotoGP Bike vs Rally Car: Ultimate Drag Race!
+            </p>
+            <p class="video-author">Red Bull</p>
+            <p class="video-stats">20M views &middot; 1 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-container">
+          <img
+            class="thumbnail"
+            src="thumbnails/thumbnail_5.avif"
+            alt="conjuring_thumbnail"
+          />
+          <div class="video-time">02:03</div>
+        </div>
+        <div class="video-details">
+          <div class="channel-DP">
+            <img
+              class="profile-picture"
+              src="channel-profile/channels_profile_5.jpg"
+              alt=""
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              The Conjuring: Last Rites | Official Teaser
+            </p>
+            <p class="video-author">Warner Bros</p>
+            <p class="video-stats">25M views &middot; 2 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-container">
+          <img
+            class="thumbnail"
+            src="thumbnails/thumbnail_7.avif"
+            alt="dev_thumbnail"
+          />
+          <div class="video-time">22:13:57</div>
+        </div>
+        <div class="video-details">
+          <div class="channel-DP">
+            <img
+              class="profile-picture"
+              src="channel-profile/channels_profile_7.jpg"
+              alt=""
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">JavaScript Tutorial Full Course</p>
+            <p class="video-author">SuperSimpleDev</p>
+            <p class="video-stats">5.7M views &middot; 1 year ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-container">
+          <img
+            class="thumbnail"
+            src="thumbnails/thumbnail_8.avif"
+            alt="motivation_thumbnail"
+          />
+          <div class="video-time">10:31</div>
+        </div>
+        <div class="video-details">
+          <div class="channel-DP">
+            <img
+              class="profile-picture"
+              src="channel-profile/channels_profile_8.jpg"
+              alt=""
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">Greatest Speech Ever | Steve Jobs</p>
+            <p class="video-author">Motivation Ark</p>
+            <p class="video-stats">39M views &middot; 4 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-container">
+          <img
+            class="thumbnail"
+            src="thumbnails/thumbnail_6.avif"
+            alt="game_thumbnail"
+          />
+          <div class="video-time">01:20:03</div>
+        </div>
+        <div class="video-details">
+          <div class="channel-DP">
+            <img
+              class="profile-picture"
+              src="channel-profile/channels_profile_6.jpg"
+              alt=""
+            />
+          </div>
+          <div class="video-info">
+            <p class="video-title">PRINCE OF PERSIA Warrior Within, Gameplay</p>
+            <p class="video-author">M&K</p>
+            <p class="video-stats">1.3M views &middot; 1 year ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

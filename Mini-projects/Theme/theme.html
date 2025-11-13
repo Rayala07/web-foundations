@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Theme</title>
+  </head>
+  <body>
+    <p class="theme-title">Light MODE</p>
+
+    <button class="toggle-btn">Dark Mode 🌝</button>
+
+    <style>
+      body {
+        background-color: rgb(168, 146, 117);
+        transition: background-color 0.35s ease;
+      }
+
+      .theme-title {
+        transition: color 0.45s ease;
+      }
+
+      .toggle-btn {
+        padding: 10px;
+      }
+    </style>
+    <script src="theme.js"></script>
+  </body>
+</html>

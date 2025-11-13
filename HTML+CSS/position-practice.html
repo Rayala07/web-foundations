@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice-Positions</title>
+  </head>
+  <body>
+    <div class="bottom-right-section">bottom-right</div>
+    <div class="right-sidebar">right sidebar</div>
+    <div class="entire-page">entire-page</div>
+
+    <div class="modal">
+      <div class="modal-container">
+        Modal Title
+        <p>This is a modal</p>
+        <button>Close</button>
+      </div>
+    </div>
+
+    <style>
+      body {
+        height: 900px;
+      }
+      .bottom-right-section {
+        /* background-color: black;
+            color: white;
+            position: fixed;
+            bottom: 20px;
+            right: 20px; */
+      }
+
+      .right-sidebar {
+        position: fixed;
+        background-color: greenyellow;
+        color: rgb(78, 78, 78);
+        top: 0;
+        right: 0;
+        width: 100px;
+        bottom: 0;
+      }
+
+      .entire-page {
+        /* position: fixed;
+            background-color: black;
+            color: white;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0; */
+      }
+
+      .modal {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      .modal-container{
+        border-radius: 5px;
+        width: 300px;
+        margin-left: 380px;
+        margin-top: 100px;
+        background-color: white;
+
+        padding: 10px;
+      }
+    </style>
+  </body>
+</html>

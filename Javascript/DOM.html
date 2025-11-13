@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <p>Youtube Subscribe Button</p>
+    <button class="subscribe-btn" onclick="subscribeChannel()">
+      Subscribe
+    </button>
+
+    <script>
+      const subscribeButtonEl = document.querySelector(".subscribe-btn");
+
+      function subscribeChannel() {
+        subscribeButtonEl.innerText = "Subscribed :)";
+      }
+
+      //DOM - Document Object MOdel , remember when an HTML element is inside JS it is then an Object! So you can use its corresponding methods
+      //Helps modify and write html code from JS
+      // document.body.innerHTML('<h1>Hello</h1>')
+
+      //Query-selector to get element from html and make it interactive
+      //   console.log(document.querySelector("button"));
+
+      //   document.querySelector("button").innerHTML = "Click";
+
+      //If similar elements are present then it will give the first one only so , to access a specific one it is recommended to use class or id of the HTML element
+    </script>
+  </body>
+</html>

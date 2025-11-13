@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container"></div>
+
+    <script src="https://unpkg.com/supersimpledev/dayjs.js"></script>
+
+    <script src="https://unpkg.com/supersimpledev/react.js"></script>
+    <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
+
+    <script src="https://unpkg.com/supersimpledev/babel.js"></script>
+
+    <script type="text/babel">
+      const container = document.querySelector(".container");
+      const root = ReactDOM.createRoot(container);
+
+      function ProductDetails({ imgSrc, name, price, discountPrice }) {
+        return (
+          <div>
+            <img src={imgSrc} alt="product-logo" width="50" />
+            <p>{name}</p>
+            {discountPrice > 0 && (
+              <>
+                <del>{price}</del>
+                <p>Discount Price: ${discountPrice}</p>
+              </>
+            )}
+            {discountPrice === 0 && <p>{price}</p>}
+            <button>Add To Cart</button>
+          </div>
+        );
+      }
+
+      function App() {
+        return (
+          <>
+            <ProductDetails
+              imgSrc="../cotton-socks.png"
+              name="Cotton Socks"
+              price="$10.95"
+              discountPrice={5.45}
+            />
+            <ProductDetails
+              imgSrc="https://supersimple.dev/images/tennis-balls.png"
+              name="Tennis Balls"
+              price="$6.00"
+              discountPrice={0}
+            />
+            <ProductDetails
+              imgSrc="https://supersimple.dev/images/plain-t-shirt.png"
+              name="Plain T-shirt"
+              price="$7.99"
+              discountPrice={0}
+            />
+          </>
+        );
+      }
+
+      root.render(<App />);
+    </script>
+  </body>
+</html>

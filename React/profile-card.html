@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="card-container"></div>
+    <script src="https://unpkg.com/supersimpledev/dayjs.js"></script>
+
+    <script src="https://unpkg.com/supersimpledev/react.js"></script>
+    <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
+
+    <script src="https://unpkg.com/supersimpledev/babel.js"></script>
+
+    <script type="text/babel">
+      const cardContainer = document.querySelector(".card-container");
+      const root = ReactDOM.createRoot(cardContainer);
+
+      function ProfileCard({ name, age, bio }) {
+        return (
+          <>
+            <div>
+              <p>{name}</p>
+              <p>Age: {age}</p>
+              <p>{bio}</p>
+            </div>
+            <hr></hr>
+          </>
+        );
+      }
+
+      function App() {
+        const profiles = [
+          {
+            name: "Babu",
+            age: 25,
+            bio: "Backend Dev",
+          },
+          {
+            name: "Shona",
+            age: 22,
+            bio: "Frontend Dev",
+          },
+          {
+            name: "Charlie",
+            age: 28,
+            bio: "Fullstack Dev",
+          },
+        ];
+
+        const [visibleProfiles, setVisibleProfiles] = React.useState(profiles);
+
+        function filterProfiles() {
+          setVisibleProfiles(profiles.filter((profile) => profile.age > 25));
+        }
+
+        function resetProfiles() {
+          setVisibleProfiles(profiles);
+        }
+
+        return (
+          <>
+            <button onClick={filterProfiles}>Greater than 25</button>
+            <button onClick={resetProfiles}>Show All Profiles</button>
+            {visibleProfiles.length > 0 ? (
+              visibleProfiles.map((profile, index) => (
+                <ProfileCard
+                  key={index}
+                  name={profile.name}
+                  age={profile.age}
+                  bio={profile.bio}
+                />
+              ))
+            ) : (
+              <p>No Profiles Found</p>
+            )}
+          </>
+        );
+      }
+
+      root.render(<App />);
+    </script>
+  </body>
+</html>

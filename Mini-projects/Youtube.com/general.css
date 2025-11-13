@@ -1,0 +1,13 @@
+p{
+    font-family: Roboto, Arial;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* The <body> tag, byDefault has a margin of - 8px , while designing your page its a good practice to set it to 0*/
+body{
+    margin: 0;
+    padding-left: 98px;
+    padding-right: 26px;
+    background-color: rgb(248, 247, 247);
+}

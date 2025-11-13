@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img class="google-logo" src="Google-logo.png" alt="google.com">
+    <input type="text" class="search-bar" placeholder="Search Google or type a URL">
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br>
+
+    <img class="display-picture" src="dp-1.jpg" alt="profile-picture">
+    <input type="text" class="tweet-bar" placeholder="What's happening?">
+    <button class="tweet-button">Tweet</button>
+
+
+    <style>
+        .google-logo{
+            margin-left: 600px;
+            margin-top: 170px;
+            display: block;
+        }
+
+        .search-bar{
+            width: 450px;
+            font-family: Arial;
+            font-size: 12px;
+            border: none;
+            color: rgb(91, 91, 91);
+            padding-left: 15px;
+            padding-top: 9px;
+            padding-bottom: 9px;
+            margin-top: 100px;
+            margin-left: 560px;
+            border-radius:25px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25);
+        }
+
+        .search-bar:focus{
+            outline: none; /* Removes the outline when you click to input on the search bar*/
+            
+        }
+
+        .display-picture{
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            object-fit: cover;
+            image-rendering: crisp-edges;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+
+        .tweet-bar{
+            border: none;
+            font-size: 15px;
+            color: rgb(56, 55, 55);
+            vertical-align: middle; /* Use it when you want upcoming elements in same line next by next*/
+        }
+
+        .tweet-bar:focus{
+            outline: none;
+        }
+
+        .tweet-button{
+            background-color: rgb(8, 151, 234);
+            border: none;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: white;
+            font-weight: bold;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 16px;
+            padding-right: 16px;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: box-shadow 0.25s;
+        }
+
+        .tweet-button:hover{
+            box-shadow: 2px 2px 7px rgba(0,0,0,0.45);
+        }
+    </style>
+</body>
+</html>

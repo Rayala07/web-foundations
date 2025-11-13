@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layouts</title>
+  </head>
+  <body>
+    <div class="profile-card">
+      <div class="user-1">
+        <img class="user-image" src="user_1.jpg" alt="cristiano-dp" />
+        <p class="user-name">Cristiano</p>
+      </div>
+      <div class="mutuals">
+        <img class="mutual-photo" src="mutual_1.jpg" alt="mutual-user" />
+        <p class="mutual-section">2 mutual friends</p>
+      </div>
+      <div class="add-friend">
+        <button class="add-friend-button">Same Team</button>
+      </div>
+    </div>
+
+    <style>
+        p{
+            font-family: Arial;
+        }
+      .user-image {
+        width: 200px;
+      }
+
+      .user-name{
+        margin-top: 5px;
+        padding-left: 8px;
+      }
+
+      .mutual-photo {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-left: 9px;
+      }
+
+
+      .mutuals{
+        display: grid;
+        grid-template-columns: 35px 1fr; 
+      }
+
+      .mutual-section{
+        margin: 0px;
+        font-size: 13px;
+        margin-left: 10px;
+        margin-top: 10px;
+      }
+
+      .add-friend{
+        margin-top: 4px;
+        padding: 10px;
+      }
+      .add-friend-button{
+        background-color: rgb(52, 144, 231);
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-family: Arial;
+        font-size: 12px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        cursor: pointer;
+        transition: 0.25s;
+      }
+      .add-friend-button:hover{
+        background-color: rgb(135, 211, 135);
+        color: black;
+      }
+
+      .profile-card{
+        width: 200px;
+        box-shadow: 5px 5px 10px rgb(163, 163, 163);
+        margin-left: 20px;
+      }
+    </style>
+  </body>
+</html>

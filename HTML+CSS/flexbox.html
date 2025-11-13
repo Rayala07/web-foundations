@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlexBox</title>
+  </head>
+  <body>
+    <div class="main-div">
+      <div class="box-1">Box 1</div>
+      <div class="box-2">Box 2</div>
+    </div>
+
+    <div class="main-div-2">
+      <div class="box-3">Box 3 - 100px</div>
+      <div class="box-4">Box 4 - Flex(fr)</div>
+    </div>
+    <div class="main-div-3">
+      <div class="box-5">Box 5</div>
+      <div class="box-6">Box 6</div>
+      <div class="box-7">Box 7</div>
+    </div>
+
+    <div class="container">
+      <div class="flexbox">
+        <div>Home</div>
+        <div class="notifications">14</div>
+        </div>
+        <div class="flexbox">
+        <div>Notifications</div>
+        <div class="notifications">3</div>
+        </div>
+        <div class="flexbox">
+        <div>Messages</div>
+        <div class="notifications">5</div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="header">
+      <div class="home">Home</div>
+      <div class="search-bar">
+        <button class="search">Search..</button>
+      </div>
+      <div class="download">
+        <button class="download-button">Download</button>
+      </div>
+    </div>
+
+    <div class="users-card">
+      <div class="profile-pic">
+        <img class="p1" src="anime-1.jpg" alt="">
+      </div>
+      <div class="user-details">
+        <p class="user-name">Eleven</p>
+        <p class="alias">The Boss</p>
+        <p class="tag">Popular</p>
+      </div>
+      <button class="follow-button">Follow</button>
+      </div>
+
+    <div class="users-card">
+      <div class="profile-pic">
+        <img class="p1" src="anime-2.jpg" alt="">
+      </div>
+      <div class="user-details">
+        <p class="user-name">Max</p>
+        <p class="alias">The Maniac</p>
+        <p class="tag">Popular</p>
+      </div>
+      <button class="follow-button">Follow</button>
+      </div>
+
+
+    <style>
+      p{
+        margin: 0;
+        font-family: Arial;
+        line-height: 21px;
+      }
+
+      .users-card{
+        margin-top:20px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        width: 300px;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .p1{
+        margin-left: 3px;
+        width: 45px;
+        border-radius: 50%;
+      }
+
+      .user-details{
+        width: 150px;
+      }
+
+      .user-name{
+        margin-top: 8px;
+        font-weight: bold;
+      }
+
+      .follow{
+        margin-right: 10px;
+      }
+
+      .alias,.tag{
+        color: grey;
+        font-size: 13px;
+      }
+
+      .follow-button{
+        background-color: rgb(67, 161, 244);
+        color: white;
+        font-weight: bold;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 12px;
+        padding-right: 12px;
+        border: none;
+        border-radius: 5px;
+        margin-right: 8px;
+      }
+      
+
+
+
+
+      .header{
+        display: flex;
+        flex-direction: row;
+        border: none;
+        background-color: rgb(102, 16, 183);
+        color: white;
+        font-weight: bold;
+        justify-content: space-between;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 12px;
+        padding-right: 12px;
+        align-items: center; /*Aligns the row items equally -_- to --- */
+      }
+
+      .search{
+        padding-right: 400px;
+        padding-left: 15px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border: none;
+        border-radius: 25px;
+        color: grey;
+      }
+
+      .download-button{
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgba(255, 255, 255, 0.749);
+        background-color: rgb(102, 16, 183);
+        border-radius: 3px;
+        color: rgba(255, 255, 255, 0.749);
+        padding: 10px;
+        cursor: pointer;
+      }
+
+
+
+
+
+      .box-1 {
+        background-color: lightblue;
+      }
+      .box-2 {
+        background-color: pink;
+      }
+
+      .box-3 {
+        background-color: lightblue;
+        width: 100px;
+      }
+      .box-4 {
+        background-color: pink;
+        flex: 1;
+      }
+
+      .box-5,
+      .box-7 {
+        background-color: lightblue;
+        width: 100px;
+      }
+      .box-6 {
+        background-color: pink;
+        width: 100px;
+      }
+
+      .main-div-2 {
+        margin-top: 30px;
+      }
+      .main-div-3 {
+        margin-top: 30px;
+      }
+
+      .main-div,
+      .main-div-2 {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .main-div-3 {
+        border-style: solid;
+        border-width: 1px;
+        margin-bottom: 1000px;
+        height: 70px;
+        display: flex;
+        flex-direction: row;
+        justify-content: start; /* This helps place the contents left(start) - right(end) - center(between and space-between)*/
+        align-items: center; /* This positions the items vertically inside the flex-box you have created*/
+      }
+
+      div {
+        font-family: Arial;
+      }
+
+      .container {
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 6px;
+        border-color: rgb(200, 200, 200);
+        width: 300px;
+        margin-bottom: 100px;
+        margin-left: 20px;
+      }
+
+      .flexbox {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+
+      .notifications{
+          background-color: rgb(49, 109, 245);
+  color: white;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+      }
+    </style>
+  </body>
+</html>

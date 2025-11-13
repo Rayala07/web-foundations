@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="et_styles.css" />
+  </head>
+  <body>
+    <div class="track-expenses-container">
+      <p class="track-expenses-title">Track Your Expenses</p>
+      <p class="track-expenses-subtitle">
+        Add new expenses and organize your financial records.ṅṅ
+      </p>
+      <div class="add-expense-container">
+        <input
+          type="text"
+          class="js-expense-input css-expense-input"
+          placeholder="e.g. Dinner, Electricity"
+        />
+        <input
+          type="text"
+          class="js-expense-amount-input css-expense-amount-input"
+          placeholder="Enter Amount"
+        />
+        <button
+          class="addExpense-btn css-add-expense-btn"
+          onclick="addExpense()"
+        >
+          Add Expense
+        </button>
+      </div>
+      <p class="expense-added-message"></p>
+    </div>
+
+    <section id="expense-list">
+      <div class="css-your-expenses-container">
+        <p class="css-your-expenses-title">Your Expenses</p>
+        <div class="sorting-button-container">
+          <button id="sort-by-amount-btn" onclick="sortExpensesListByAmount()">
+            <img
+              class="sort-icon"
+              src="img/sorting-order.png"
+              alt="sort-icon"
+            />Sort by Amount (High to Low)
+          </button>
+          <button id="sort-by-name-btn" onclick="sortExpensesListByName()">
+            <img class="sort-icon" src="img/sort-az.png" alt="sort-icon" /> Sort
+            by Name (A to Z)
+          </button>
+        </div>
+        <div class="js-expense-list css-expense-list-container"></div>
+      </div>
+    </section>
+
+    <section id="expense-overview">
+      <div class="expense-overview-container">
+        <p class="expense-overview-title">Expense Overview</p>
+        <div class="expense-overview-summary-container">
+          <p class="expense-overview-summary-title">Summary</p>
+          <p class="number-of-expense">
+            Number of Expense: <span class="expense-count"></span>
+          </p>
+          <p class="total-expense"><span class="total-expense"></span></p>
+          <p class="expense-overview-description">
+            This summary provides a snapshot of your spending.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script src="et_script.js"></script>
+  </body>
+</html>

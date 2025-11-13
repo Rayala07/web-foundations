@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+  </head>
+  <body>
+    <div class="header">Header</div>
+    <div class="side-bar">
+        sidebar
+    </div>
+
+    <div class="absolute">
+      absolute
+    </div>
+    <div class="div-1">div1
+      <div class="time-stamp">5:00</div>
+    </div>
+    <div class="div-2">div2</div>
+    <!-- We are learning postions in CSS  -->
+    <style>
+      body {
+        height: 2000px;
+        padding-top: 55px; /*As header is fixec - it keeps rest of the body below the fixed header section*/
+        padding-left: 80px;
+      }
+
+      .header {
+        background-color: bisque;
+        position: fixed; /*header becomes a top layer on the page */
+        /*top: 10px; - used to set how far should the element be from the top of the window*/
+        left: 0px; /*Left edge of the window , right bottom also can be done similarly*/
+        /*Top-left-bottom-right is used when you want to resize the position with the page */
+        /*If you want it to fixed - height and width can be used*/
+        right: 0;
+        top: 0;
+        height: 50px;
+        z-index: 100; /*Layers element to front*/
+      }
+
+      .side-bar{
+        background-color: greenyellow;
+        position: fixed;
+
+        left: 0;
+        bottom: 0;
+        top: 50px;
+        width: 72px;
+      }
+
+      .absolute{
+        position: absolute; /*Used to attach elements above elements*/
+        background-color: red;
+        color: white;
+
+        top: 60px;
+        right: 10px;
+      }
+
+      .div-1 {
+        background-color: lightblue;
+        height: 200px;
+        width: 200px;
+        position: relative; 
+      }
+      .time-stamp{
+        position: absolute;
+        background-color: black;
+        color: white;
+        bottom: 10px;
+        right: 10px;
+      }
+
+      .div-2 {
+        background-color: pink;
+        height: 200px;
+        width: 200px;
+      }
+    </style>
+  </body>
+</html>

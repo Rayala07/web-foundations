@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+</head>
+<body>
+    <button class="subscribe-button">SUBSCRIBE</button>
+    <button class="join-button">JOIN</button>
+    <button class="tweet-button">Tweet</button>
+
+
+    <!--Buttons - colors,borders,layout*/-->
+    <style>
+        .subscribe-button{
+            background-color: rgb(201, 0, 0);
+            color: white;
+            border: none; /* Outline of the element*/
+            height: 37px;
+            width: 105px; 
+            border-radius: 2px; /*Rounder corner of the border*/
+            cursor: pointer;
+            margin-right: 8px; /* Space b/w elements is set by margin*/
+            transition: opacity 0.50s;
+        }
+
+    </style>
+
+    <style>
+        .join-button{
+            background-color: white;
+            border-color: rgb(0, 162, 255);
+            border-style: solid; /*Sets a solid color on the border*/
+            border-width: 1px;
+            color: rgb(0, 162, 255);
+            height: 36px;
+            width: 62px;
+            cursor: pointer;
+            transition: background-color 0.25s,
+            color 0.25s;
+        }
+    </style>
+
+    <style>
+        .tweet-button{
+            background-color: rgb(8, 151, 234);
+            border: none;
+            color: white;
+            height: 36px;
+            width: 76px;
+            border-radius: 18px;
+            font-weight: bold;
+            font-size: 15px;
+            cursor: pointer;
+            margin-left: 3px;
+            transition: box-shadow 0.25s;
+        }
+    </style>
+
+
+
+    <!--
+    Hovers, Transitions and Shadows ->
+    hover - when you hover styles will change.
+    active - when you click styles will change.
+    -->
+
+    <style>
+        .subscribe-button:hover{
+            opacity: 0.7; /* Fade out the color of the element */
+
+        }
+
+        .subscribe-button:active{
+            opacity: 0.5;
+        }
+
+        .join-button:hover{
+            background-color:rgb(0, 162, 255);
+            color: white;
+        }
+
+        .join-button:active{
+            opacity: 0.7;
+        }
+
+        .tweet-button:hover{
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.45); /* horizontal vertical blur rgba(color) */
+        }
+
+    </style>
+</body>
+</html>
